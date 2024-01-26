@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+:root {
+    --darkblue: #020122;
+    --orange: #E05125;
+    --gray: #D8D8D5;
+    --white: #fefeff;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Configurações da barra de navegação */
+
+.img_logo_header {
+    width: 60px;
+}
+
+.header,
+.navigation_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header {
+    background-color: var(--darkblue);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.541);
+    height: 4em;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.navigation_header {
+    gap: 3em;
+    z-index: 2;
+}
+
+.navigation_header a {
+    text-decoration: none;
+    color: var(--white);
+    transition: 1s;
+    font-weight: bold;
+}
+
+.navigation_header a:hover {
+    color: var(--orange);
+}
+
+#active {
+    color: var(--orange);
+}
+
+#login {
+    background-color: var(--white);
+    color: black;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.btn_icon_header {
+    background-color: transparent;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .btn_icon_header {
+        display: block;
+    }
+
+    .navigation_header {
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        background-color: #030130;
+        height: 100%;
+        width: 40vw;
+        padding: 1em;
+        animation-duration: 1s;
+        margin-left: -100vw;
+    }
+
+    @keyframes showSidebar {
+        from {
+            margin-left: -100vw;
+        }
+        top {
+            margin-left: -11.5vw;
+        }
+    }
+}
+
+/* Configurações dos textos e imagens */
+
+#sobre-autoescola {
+    display: flex;
+    text-align: center;
+    gap: 20px;
+    margin-top: 4%;
+    margin-left: 20%;
+    padding-bottom: 7%;
+}
+
+#texto2 {
+    width: 50%;
+}
+
+.img-aula {
+    width: 60%;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/cartas.css">
+    <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
+    <title>Auto Moto Escola Barueri</title>
+</head>
+<body>
+    <div class="header" id="header">
+        <button class="btn_icon_header" onclick="toggleSidebar()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+        </button>
+        <div class="logo_header">
+            <img src="imagens/logo.png" class="img_logo_header" alt="Logo Auto Escola">
+        </div>
+        <div class="navigation_header" id="navigation_header">
+            <button class="btn_icon_header" onclick="toggleSidebar()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                  </svg>
+            </button>
+            <a href="cadastroalunos.html">Cadastro</a>
+            <a href="registroalunos.html">Registrados</a>
+            <a href="registrocarros.html">Veículos</a>
+            <a href="cartas.html" id="active">Cartas</a>
+            <a href="registropagamentos.html">Pagamentos</a>
+            <a href="calendarioaulas.html">Calendário</a>
+            <a href="agendamento.html">Agenda</a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+                    <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                  </svg>
+            </a>
+        </div>
+    </div>
+    <main>
+        <div id="quadrado">
+            <h1 id="titulo">Controle de cartas:</h1>
+            <div id="r1">
+                <h2 id="sub1">CARTA <br>A</h2>
+                <h3 id="text1">Valor anterior:</h3>
+                <h4 id="subtext1">1.500 R$</h4>
+                <h3 id="text2">Valor à alterar:</h3>
+                <form action="">
+                    <input type="text" name="valor" id="valor" required>
+                    <input type="submit" value="Alterar" id="bt1" onclick="Alterar1()">
+                </form>
+            </div>
+            <div id="r2">
+                <h2 id="sub2">CARTA <br>B</h2>
+                <h3 id="text3">Valor anterior:</h3>
+                <h4 id="subtext2">1.700 R$</h4>
+                <h3 id="text4">Valor à alterar:</h3>
+                <form action="">
+                    <input type="text" name="valor" id="valor2" required>
+                    <input type="submit" value="Alterar" id="bt2" onclick="Alterar2()">
+                </form>
+            </div>
+            <div id="r3">
+                <h2 id="sub3">CARTA <br>A+B</h2>
+                <h3 id="text5">Valor anterior:</h3>
+                <h4 id="subtext3">2.500 R$</h4>
+                <h3 id="text6">Valor à alterar:</h3>
+                <form action="">
+                    <input type="text" name="valor" id="valor3" required>
+                    <input type="submit" value="Alterar" id="bt3" onclick="Alterar3()">
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="JS/pág10.js"></script>
+</html>

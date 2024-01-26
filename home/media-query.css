@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 768px) {
+    
+    #introducao {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+
+    #valores-cartas {
+        height: 240vh;
+    }
+
+    #titulo-cartas {
+        font-size: 10%;
+    }
+
+    #cartas {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 50px;
+        padding-top: 7%;
+    }
+
+    #avaliacoes {
+        height: 221vh;
+    }
+
+    #text-rating {
+        padding-top: 3%;
+    }
+
+    #avaliacoes-alunos {
+        display: flex;
+        flex-direction: column;
+        margin-top: 8%;
+    }
+
+    #anuncio-app {
+        height: 168vh;
+    }
+
+    #sobre-app {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #informacoes-app {
+        margin-left: -11%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    #carta-A {
+        margin-left: 7%;
+    }
+    
+    #carta-AB {
+        margin-left: -8%;
+    }
+
+    #valores-cartas {
+        height: 105vh;
+    }
+
+    #avaliacoes {
+        height: 105vh;
+    }
+}
+
