@@ -7,6 +7,10 @@
         padding: 5px;
     }
 
+    #texto-introdutorio {
+        transform: translateX(-1%);
+    }
+
     #valores-cartas {
         padding-bottom: 50px;
     }
@@ -52,7 +56,7 @@
     }
 
     #img-app {
-        transform: translateX(-1%);
+        transform: translateX(1%);
     }
 }
 
