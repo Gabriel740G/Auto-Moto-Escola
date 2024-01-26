@@ -79,6 +79,7 @@
         position: absolute;
         flex-direction: column;
         top: 0;
+        position: fixed;
         background-color: #030130;
         height: 100%;
         width: 40vw;
@@ -101,10 +102,11 @@
 
 #sobre-autoescola {
     display: flex;
+    justify-content: center;
     text-align: center;
     gap: 20px;
     margin-top: 4%;
-    margin-left: 20%;
+    margin-left: 10%;
     padding-bottom: 7%;
 }
 
