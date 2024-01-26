@@ -1,20 +1,8 @@
 @charset "UTF-8";
 
 @media screen and (max-width: 768px) {
-    
-    #introducao {
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
-    }
-
-    #introducao > #texto-introdutorio {
-        transform: translateY(-20%);
-    }
-
     #valores-cartas {
-        height: 240vh;
+        height: 220vh;
     }
 
     #cartas {
@@ -28,10 +16,6 @@
 
     #avaliacoes {
         height: 221vh;
-    }
-
-    #text-rating {
-        padding-top: 3%;
     }
 
     #subtitulo-avaliacoes {
