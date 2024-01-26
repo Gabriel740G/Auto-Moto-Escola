@@ -15,6 +15,10 @@
         padding-bottom: 50px;
     }
 
+    #titulo-cartas {
+        transform: translateY(10%);
+    }
+
     #cartas {
         display: flex;
         align-items: center;
