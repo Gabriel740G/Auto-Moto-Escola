@@ -9,6 +9,10 @@
        align-items: center;
     }
 
+    #introducao > #texto-introdutorio {
+        transform: translateY(-20%);
+    }
+
     #valores-cartas {
         height: 240vh;
     }
