@@ -135,8 +135,8 @@
 #titulo-cartas {
     color: var(--white);
     font-weight: normal;
-    font-size: 200%;
-    padding-top: 6%;
+    font-size: 2em;
+    padding-top: 5%;
 }
 
 #cartas {
@@ -144,8 +144,7 @@
     align-items: center;
     justify-content: center;
     color: var(--white);
-    padding-bottom: 3%;
-    margin-top: 2%;
+    margin-top: 3%;
 }
 
 .img-carta {
@@ -168,11 +167,16 @@
 }
 
 #text-rating {
-    margin-top: 5%;
+    padding-top: 5%;
 }
 
 #titulo-avaliacoes {
     font-size: 2em;
+}
+
+#subtitulo-avaliacoes {
+    padding-bottom: 3%; 
+    padding-top: 1%;
 }
 
 #avaliacoes-alunos {
@@ -240,10 +244,9 @@
 #informacoes-app {
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
     height: 10%;
-    padding-top: 4%;
-    transform: translate(10%, 10%);
 }
 
 #texto1-app {
@@ -266,7 +269,6 @@
     width: 150px;
     cursor: pointer;
     font-weight: bold;
-    transform: translateX(52%);
 }
 
 /* Configurações do rodapé */

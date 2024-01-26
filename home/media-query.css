@@ -17,10 +17,6 @@
         height: 240vh;
     }
 
-    #titulo-cartas {
-        font-size: 10%;
-    }
-
     #cartas {
         display: flex;
         align-items: center;
@@ -38,6 +34,11 @@
         padding-top: 3%;
     }
 
+    #subtitulo-avaliacoes {
+        width: 80%;
+        transform: translateX(13%);
+    }
+
     #avaliacoes-alunos {
         display: flex;
         flex-direction: column;
@@ -51,10 +52,9 @@
     #sobre-app {
         display: flex;
         flex-direction: column;
-    }
-
-    #informacoes-app {
-        margin-left: -11%;
+        align-items: center;
+        justify-content: center;
+        padding-top: 11%;
     }
 }
 
