@@ -7,8 +7,15 @@
         padding: 5px;
     }
 
+    #introducao {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
     #texto-introdutorio {
-        position: static;
+        margin-left: 34%;
     }
 
     #valores-cartas {

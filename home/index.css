@@ -114,13 +114,11 @@
 }
 
 #introducao > #texto-introdutorio {
-    position: absolute;
-    top: 38vh;
-    left: 23vw;
+    transform: translate(-17vw, 28vh);
 }
 
 #introducao > #nome-autoescola {
-    transform: translateY(81vh);
+    transform: translateY(58vh);
 }
 
 /* Configurações da sessão de cartas */
