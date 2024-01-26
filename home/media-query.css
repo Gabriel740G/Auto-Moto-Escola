@@ -1,6 +1,12 @@
 @charset "UTF-8";
 
 @media screen and (max-width: 768px) {
+    #login {
+        width: 120px;
+        text-align: center;
+        padding: 5px;
+    }
+
     #valores-cartas {
         height: 230vh;
     }

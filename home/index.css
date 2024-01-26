@@ -79,6 +79,7 @@
         position: absolute;
         flex-direction: column;
         top: 0;
+        position: fixed;
         background-color: #030130;
         height: 100%;
         width: 40vw;
@@ -107,22 +108,19 @@
 }
 
 #introducao {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
-    gap: 150px;
     color: white;
     text-shadow: 1px 1px 2px rgb(0, 0, 0);
-    width: 34%;
 }
 
 #introducao > #texto-introdutorio {
-    font-size: 100%;
+    position: absolute;
+    top: 38vh;
+    left: 23vw;
 }
 
 #introducao > #nome-autoescola {
-    font-size: 150%;
+    transform: translateY(81vh);
 }
 
 /* Configurações da sessão de cartas */
