@@ -8,7 +8,7 @@
     }
 
     #texto-introdutorio {
-        transform: translateX(-1%);
+        position: static;
     }
 
     #valores-cartas {
