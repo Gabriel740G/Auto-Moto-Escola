@@ -1,4 +1,9 @@
 @media screen and (max-width: 768px) {
+    #login {
+        width: 120px;
+        text-align: center;
+        padding: 5px;
+    }
 
     #form-login {
         margin-top: 6%;
@@ -11,16 +16,16 @@
 
     #img-carro {
         width: 28%;
+        margin-top: -2%;
     }
 
     #texto-login {
         font-size: .9em;
         margin-right: 0;
-        margin-left: -8%;
     }
 
     form {
-        margin-top: 17%;
+        margin-top: 25%;
     }
 
     .form-label {
@@ -40,9 +45,5 @@
     .btn-ver_senha {
         margin-left: -8%;
         margin-top: 2%;
-    }
-
-    #btn-login {
-        margin-top: 5%;
     }
 }
