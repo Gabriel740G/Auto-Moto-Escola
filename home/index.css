@@ -62,6 +62,10 @@
     border-radius: 20px;
 }
 
+#login:hover {
+    color: var(--orange);
+}
+
 .btn_icon_header {
     background-color: transparent;
     border: none;
@@ -148,6 +152,13 @@
     width: 100%;
 }
 
+#carta-A, #carta-B, #carta-AB {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
 .img-carta {
     width: 56%;
     height: 40%;
@@ -156,8 +167,6 @@
 .descricao-carta {
     width: 60%;
     font-size: 110%;
-    margin-left: 20%;
-    margin-top: 3%;
 }
 
 /* Configurações da sessão de avaliações */
@@ -168,6 +177,10 @@
 }
 
 #text-rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding-top: 5%;
 }
 
@@ -187,30 +200,33 @@
     gap: 40px;
 }
 
+#aluno1, #aluno2, #aluno3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
 .img-aluno {
     width: 105px;
     height: 100px;
     border: 2px solid var(--darkblue);
     border-radius: 50%;
-    transform: translateY(52%);
+    transform: translateY(61px);
 }
 
-.box {
+.nome-aluno {
     background-color: var(--darkblue);
     color: var(--white);
     height: 100px;
+    width: 250px;
 }
 
-.nomealuno {
+.nome-aluno_container {
     color: var(--white);
     font-weight: normal;
     font-size: 1em;
-    transform: translateY(10vh);
-}
-
-.comments {
-    margin-top: 8%;
-    margin-bottom: 4%;
+    padding-top: 60px;
 }
 
 #comentario1 {
@@ -231,11 +247,13 @@
     background-color: var(--gray);
 }
 
-#img-app {
-    width: 95vw;
+#img-app img{
+    width: 300px;
+    height: 600px;
+    margin: 30px 30px;
 }
 
-#sobre-app {
+#anuncio-app #anuncio-app_container {
     display: flex;
     align-items: center;
     justify-content: center;
