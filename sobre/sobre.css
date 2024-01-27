@@ -62,6 +62,10 @@
     border-radius: 20px;
 }
 
+#login:hover {
+    color: var(--orange);
+}
+
 .btn_icon_header {
     background-color: transparent;
     border: none;
@@ -111,7 +115,7 @@
 }
 
 #texto2 {
-    width: 50%;
+    width: 60%;
 }
 
 .img-aula {
