@@ -247,9 +247,12 @@
     background-color: var(--gray);
 }
 
+#img-app {
+    text-align: center;
+}
+
 #img-app img{
-    width: 300px;
-    height: 600px;
+    width: 70%;
     margin: 30px 30px;
 }
 
