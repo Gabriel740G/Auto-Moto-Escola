@@ -6,7 +6,7 @@
     }
 
     #form-login {
-        height: 64vh;
+        height: 430px;
     }
 
     #header-login {
@@ -19,13 +19,13 @@
         width: 30%;
     }
 
-    #form-campos {
-        height: 45vh;
-    }
-
     #texto-login {
         font-size: .9em;
         margin-right: 0;
+    }
+
+    #form-campos {
+        height: 300px;
     }
 
     form {
@@ -52,6 +52,6 @@
     }
 
     #btn-login {
-        transform: translateY(-173%);
+        transform: translateY(-140%);
     }
 }
