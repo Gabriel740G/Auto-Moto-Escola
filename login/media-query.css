@@ -52,6 +52,7 @@
     }
 
     #btn-login {
+        position: fixed;
         transform: translateY(-140%);
     }
 }
