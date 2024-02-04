@@ -244,6 +244,9 @@
 /* Configurações da sessão do anúncio do app */
 
 #anuncio-app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--gray);
 }
 
@@ -254,13 +257,6 @@
 #img-app img{
     width: 70%;
     margin: 30px 30px;
-}
-
-#anuncio-app #anuncio-app_container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
 }
 
 #informacoes-app {
