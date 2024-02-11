@@ -187,8 +187,8 @@ form {
     border: none;
     color: var(--darkblue);
     cursor: pointer;
-    position: absolute;
-    right: 202px;
+    position: fixed;
+    right: 200px;
 }
 
 .btn-senha:hover {

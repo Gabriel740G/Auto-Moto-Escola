@@ -36,12 +36,12 @@
     }
 
     .btn-senha {
-        position: absolute;
+        position: fixed;
         right: 35px;
     }
 
     .btn-senha .fa {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     #btn-login {
