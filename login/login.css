@@ -92,6 +92,16 @@ body {
         margin-left: -100vw;
     }
 
+    #login {
+        width: 120px;
+        text-align: center;
+        padding: 5px;
+    }
+
+    #form-login {
+        margin-top: 40px;
+    }
+
     @keyframes showSidebar {
         from {
             margin-left: -100vw;
@@ -106,20 +116,17 @@ body {
 
 #form-login {
     background-color: var(--white);
-    height: 80vh;
-    width: 83vw;
-    margin-top: 2.6%;
+    height: 80%;
+    width: 84%;
     text-align: center;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.664);
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 15%;
+    left: 8%;
 }
 
 #header-login {
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     transform: translateX(-19%);
@@ -136,10 +143,10 @@ body {
 
 #form-campos {
     background-color: var(--gray);
-    width: 64vw;
-    height: 57vh;
+    width: 82%;
+    height: 72%;
     position: absolute;
-    top: 50%;
+    top: 54%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -149,7 +156,7 @@ form {
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    margin-top: 9%;
+    margin-top: 7%;
 }
 
 .form-label {
@@ -163,12 +170,8 @@ form {
     border: none;
     text-align: center;
     padding: 13px;
-    font-size: 1.1em;
+    font-size: 16px;
     width: 60%;
-}
-
-.campos:focus {
-    outline: none;
 }
 
 #campo-senha {
@@ -176,24 +179,24 @@ form {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    width: 60%;
-    background-color: var(--white);
+    width: 100%;
 }
 
-#senha {
-    width: 75%;
-}
-
-.btn-ver_senha {
+.btn-senha {
     background-color: transparent;
     border: none;
     color: var(--darkblue);
     cursor: pointer;
-    margin-right: -10%;
+    position: absolute;
+    right: 202px;
 }
 
-.btn-ver_senha:hover {
+.btn-senha:hover {
     color: var(--orange);
+}
+
+.btn-senha .fa {
+    font-size: 18px;
 }
 
 #btn-ocultar {
@@ -209,7 +212,8 @@ form {
     border-radius: 12px;
     padding: 15px;
     cursor: pointer;
-    font-size: 1em;
+    font-size: 16px;
+    transform: translateY(20px);
 }
 
 #btn-login:hover {

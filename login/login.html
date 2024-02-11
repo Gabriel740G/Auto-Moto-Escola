@@ -5,22 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="login.css">
-    <link rel="stylesheet" href="media-query.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" href="../imagens/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="media-query.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css">
     <title>Auto Moto Escola Barueri</title>
 </head>
 <body>
     <header class="header" id="header">
         <button class="btn_icon_header" onclick="toggleSidebar()">
-            <i class="material-icons">menu</i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+              </svg>
         </button>
         <div class="logo_header">
             <img src="../imagens/logo.png" class="img_logo_header" alt="logo">
         </div>
         <nav class="navigation_header">
             <button class="btn_icon_header" onclick="toggleSidebar()">
-                <i class="material-icons">close</i>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                  </svg>
             </button>
             <a href="../home/index.html">Home</a>
             <a href="../sobre/sobre.html">Sobre nós</a>
@@ -36,18 +41,18 @@
             <div id="form-campos">
                 <form action="" method="post">
                     <label for="usuario" class="form-label">Insira seu nome de usuário:</label>
-                    <input type="text" id="usuario" class="campos" placeholder="Ex: HenriqueADM" required>
+                    <input type="text" id="usuario" class="campos" placeholder="Ex: HenriqueADM"  maxlength="12" required>
 
                     <label for="senha" class="form-label">Insira sua senha:</label>
                     <div id="campo-senha">
-                        <input type="password" id="senha" class="campos" placeholder="Ex: Muller83339" required>
+                        <input type="password" id="senha" class="campos" placeholder="Ex: Muller83339" maxlength="8" required>
 
-                        <button type="button" class="btn-ver_senha" id="btn-visivel" onclick="VerSenha()">
-                            <i class="material-icons">visibility</i>
+                        <button type="button" class="btn-senha" id="btn-visivel" onclick="VerSenha()">
+                            <span class="fa fa-eye"></span>
                         </button>
 
-                        <button type="button" class="btn-ver_senha" id="btn-ocultar" onclick="OcultarSenha()">
-                            <i class="material-icons">visibility_off</i>
+                        <button type="button" class="btn-senha" id="btn-ocultar" onclick="OcultarSenha()">
+                            <span class="fa fa-eye-slash"></span>
                         </button>
                     </div>
                     
