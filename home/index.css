@@ -251,12 +251,8 @@
 }
 
 #img-app {
-    text-align: center;
-}
-
-#img-app img{
-    width: 70%;
-    margin: 30px 30px;
+    width: 23%;
+    margin: 50px 80px; 
 }
 
 #informacoes-app {
