@@ -187,7 +187,7 @@ form {
     border: none;
     color: var(--darkblue);
     cursor: pointer;
-    position: fixed;
+    position: absolute;
     right: 200px;
 }
 
