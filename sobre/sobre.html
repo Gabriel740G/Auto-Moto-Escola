@@ -4,22 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sobre.css">
-    <link rel="stylesheet" href="media-query.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" href="../imagens/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="media-query.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css">
     <title>Auto Moto Escola Barueri</title>
 </head>
 <body>
     <header class="header" id="header">
         <button class="btn_icon_header" onclick="toggleSidebar()">
-            <i class="material-icons">menu</i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+              </svg>
         </button>
         <div class="logo_header">
             <img src="../imagens/logo.png" class="img_logo_header" alt="logo">
         </div>
         <nav class="navigation_header">
             <button class="btn_icon_header" onclick="toggleSidebar()">
-                <i class="material-icons">close</i>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                  </svg>
             </button>
             <a href="../home/index.html">Home</a>
             <a href="sobre.html" id="active">Sobre nós</a>
@@ -29,7 +34,7 @@
     <main id="content" onclick="closeSidebar()" tabindex="0">
         <div id="sobre-autoescola">
             <div id="texto1">
-                <h3 id="texto-boas_vindas">Bem-vindo(a) à Auto Moto Escola Barueri!</h3>
+                <h3 id="titulo-boas_vindas">Bem-vindo(a) à Auto Moto Escola Barueri!</h3>
                 <p class="textos-autoescola">
                     Nós somos uma escola de condução que <br>busca proporcionar aos nossos alunos<br> uma experiência única e eficiente na <br>aprendizagem da direção de veículos <br>automotores. Fundada em 2013, temos o <br>compromisso de oferecer aos nossos <br>clientes um ensino de qualidade, com <br>aulas teóricas e práticas ministradas por <br>instrutores experientes e altamente <br>capacitados.<br>
                 </p>

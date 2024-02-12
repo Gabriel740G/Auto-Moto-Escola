@@ -119,13 +119,16 @@
 }
 
 #introducao > #texto-introdutorio {
-    transform: translate(-17vw, 28vh);
     width: 100%;
+    position: absolute;
+    top: 36%;
+    left: -16%;
 }
 
 #introducao > #nome-autoescola {
-    transform: translateY(58vh);
     width: 100%;
+    position: absolute;
+    top: 91%;
 }
 
 /* Configurações da sessão de cartas */
@@ -256,7 +259,6 @@
     align-items: center;
     gap: 15px;
     text-align: center;
-    height: 10%;
 }
 
 #texto1-app {

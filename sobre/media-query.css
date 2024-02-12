@@ -12,7 +12,8 @@
         margin-top: 40px;
     }
 
-    #texto-boas_vindas {
+    #titulo-boas_vindas {
+        width: 330px;
         font-size: 16px;
     }
 
