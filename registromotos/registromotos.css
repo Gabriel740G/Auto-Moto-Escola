@@ -93,11 +93,12 @@
 
 /* Configurações da caixa de registro de alunos */
 
-#motos-registradas {
+#background-registro {
     background-color: var(--darkblue);
     width: 80vw;
     height: 80vh;
     margin-top: 2%;
+    overflow-y: scroll;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -111,9 +112,23 @@
     margin: 15px 25px;
 }
 
+#search-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 #search-register {
-    padding: 6px;
+    padding: 8px;
     width: 300px;
+}
+
+#btn-search {
+    background-color: var(--orange);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    padding: 4px 6px;
 }
 
 #navigation-register {
@@ -150,4 +165,36 @@
     width: 150px;
     border-radius: 20px;
 }
+
+/* Configurações das informações da moto */
+
+#motos-registradas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.info-moto {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: 1px solid var(--white);
+    padding: 10px;
+    margin: 10px 25px;
+}
+
+.info-moto p {
+    color: var(--white);
+    font-weight: 600;
+}
+
+.info-moto span {
+    font-weight: normal;
+}
+
+.modelo-moto span {
+    font-weight: normal;
+}
+
+
+
 

@@ -33,12 +33,25 @@
         </nav>
     </header>
     <main id="content" onclick="closeSidebar()" tabindex="0">
-        <div id="carros-registrados">
+        <div id="background-registro">
             <div id="header-register">
-                <input type="search" id="search-register">
+                <div id="search-input">
+                    <input type="search" id="search-register" placeholder="Digite a placa, modelo ou marca">
+                    <button id="btn-search">
+                        <i class="material-icons">search</i>
+                    </button>
+                </div>
                 <div id="navigation-register">
                     <a href="registrocarros.html" class="btn-register" id="btn-carro_register">Carros</a>
                     <a href="../registromotos/registromotos.html" class="btn-register" id="btn-moto_register">Motos</a>
+                </div>
+            </div>
+            <div id="carros-registrados">
+                <div class="info-carro">
+                    <p class="modelo-carro">Modelo: <span>HB20</span></p>
+                    <p>Marca: <span class="marca">Hyundai</span></p>
+                    <p>Ano: <span class="ano">2014</span></p>
+                    <p>Placa: <span class="placa">2D0833</span></p>
                 </div>
             </div>
         </div>

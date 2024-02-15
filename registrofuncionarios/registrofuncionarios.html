@@ -33,12 +33,25 @@
         </nav>
     </header>
     <main id="content" onclick="closeSidebar()" tabindex="0">
-        <div id="funcionarios-registrados">
+        <div id="background-registro">
             <div id="header-register">
-                <input type="search" id="search-register">
+                <div id="search-input">
+                    <input type="search" id="search-register"  placeholder="Digite o RM, CPF ou o Nome">
+                    <button id="btn-search">
+                        <i class="material-icons">search</i>
+                    </button>
+                </div>
                 <div id="navigation-register">
                     <a href="../registroalunos/registroalunos.html" class="btn-register" id="btn-aluno_register">Alunos</a>
                     <a href="registrofuncionarios.html" class="btn-register" id="btn-funcionario_register">Funcionários</a>
+                </div>
+            </div>
+            <div id="funcionarios-registrados">
+                <div class="info-funcionario">
+                    <p class="nome-funcionario">Gabriel Gomes Marques</p>
+                    <p>CPF: <span class="CPF">50255122802</span></p>
+                    <p>NR: <span class="NR">82901</span></p>
+                    <p>Cargo: <span class="carta">ADM</span></p>
                 </div>
             </div>
         </div>

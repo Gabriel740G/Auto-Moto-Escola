@@ -93,16 +93,19 @@
 
 /* Configurações da caixa de registro de alunos */
 
-#alunos-registrados {
+#background-registro {
     background-color: var(--darkblue);
     width: 80vw;
     height: 80vh;
     margin-top: 2%;
+    overflow-y: scroll;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+/* Configurações do cabeçalho de registro */
 
 #header-register {
     display: flex;
@@ -111,9 +114,23 @@
     margin: 15px 25px;
 }
 
+#search-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 #search-register {
-    padding: 6px;
+    padding: 8px;
     width: 300px;
+}
+
+#btn-search {
+    background-color: var(--orange);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    padding: 4px 6px;
 }
 
 #navigation-register {
@@ -150,3 +167,31 @@
     border-radius: 20px;
 }
 
+/* Configurações das informações do aluno */
+
+#alunos-registrados {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.info-aluno {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    border: 1px solid var(--white);
+    padding: 10px;
+    margin: 10px 25px;
+}
+
+.info-aluno p {
+    color: var(--white);
+    font-weight: 600;
+}
+
+.info-aluno span {
+    font-weight: normal;
+}
+
+.nome-aluno {
+    text-transform: uppercase;
+}
