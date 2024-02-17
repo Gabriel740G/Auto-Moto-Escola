@@ -203,17 +203,17 @@
 .btns {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 8px;
 }
 
-.excluir, .editar {
+.excluir, .editar, .ver-mais {
     background-color: transparent;
     color: var(--orange);
     border: none;
     cursor: pointer;
 }
 
-.excluir:hover, .editar:hover {
+.excluir:hover, .editar:hover, .ver-mais:hover {
     color: var(--white);
 }
 
