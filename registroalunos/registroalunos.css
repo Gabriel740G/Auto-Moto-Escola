@@ -176,6 +176,7 @@
 
 .info-aluno {
     display: flex;
+    display: none;
     justify-content: space-between;
     border: 1px solid var(--white);
     padding: 10px;
@@ -197,23 +198,114 @@
     font-weight: normal;
 }
 
-.nome-aluno {
-    text-transform: uppercase;
-}
-
-.btns {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.excluir, .editar, .ver-mais {
+.ver-mais {
     background-color: transparent;
     color: var(--orange);
     border: none;
     cursor: pointer;
 }
 
-.excluir:hover, .editar:hover, .ver-mais:hover {
+.ver-mais:hover {
     color: var(--white);
+}
+
+/* Configurações do card de informações detalhadas */
+
+.background-info {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.555);
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-fechar {
+    background-color: var(--orange);
+    color: var(--white);
+    border: none;
+    margin: 10px;
+    padding: 2px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+
+.btn-fechar:hover {
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+.informacoes-completas {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #040131;
+    color: var(--white);
+    text-align: center;
+    width: 65%;
+    height: 68%;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.informacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.informacoes > p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.informacoes span {
+    font-weight: normal;
+}
+
+.informacoes-completas > h2 {
+    text-transform: uppercase;
+}
+
+.btns {
+    display: flex;
+    gap: 40px;
+    margin-top: 10px;
+}
+
+.btn-excluir, .btn-editar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border: none;
+    font-weight: bold;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.btn-excluir {
+    background-color: red;
+    color: var(--white);
+}
+
+.btn-excluir:hover {
+    background-color: var(--white);
+    color: red;
+}
+
+.btn-editar {
+    background-color: blue;
+    color: var(--white);
+}
+
+.btn-editar:hover {
+    background-color: var(--white);
+    color: blue;
 }
