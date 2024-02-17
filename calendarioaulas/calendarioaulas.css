@@ -104,8 +104,10 @@
 
 /* Configurações do cabeçalho do .calendario */
 
+
 .calendario {
-    width: 50%;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.521);
+    width: 70%;
     position: absolute;
     top: 55%;
     left: 50%;
@@ -116,6 +118,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     padding: 15px;
     background-color: var(--orange);
     color: var(--white);
@@ -137,6 +140,7 @@
 
 .calendario table {
     border-collapse: collapse;
+    width: 100%;
 }
 
 .calendario thead {
@@ -146,48 +150,30 @@
 }
 
 .calendario td {
-    border: 1px solid black;
-    height: 70px;
+    height: 60px;
     width: 110px;
     text-align: center;
 }
 
-.calendario tbody td {
+.dias {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.background-dia {
     background-color: var(--white);
+    border: 1px solid black;
+    width: 100%;
+    height: 88px;
     cursor: pointer;
 }
 
-.calendario tbody td:hover {
-    background-color: var(--darkblue);
-    color: var(--white);
-}
-
-.calendario table .disponivel {
-    background-color: var(--darkblue);
-    color: var(--white);
-}
-
-.calendario .mes-anterior, .calendario .proximo-mes {
-    color: #cbd1d2;
-}
-
-.aulas-marcadas {
-    position: relative;
-}
-
-.aulas-marcadas:after {
-    content: '';
-    width: 7px;
-    height: 7px;
-    left: 50%;
-    bottom: 7px;
-    margin: -3.5px 0 0 -3.5px;
-    background-color: var(--darkblue);
-    display: block;
+.dia {
+    background-color: var(--orange);
+    color: var(--darkblue);
+    font-weight: 600;
+    text-align: end;
+    padding: 4px;
     position: absolute;
-    border-radius: 50%;
-}
-
-.aulas-marcadas:hover::after {
-    background-color: var(--white);
 }

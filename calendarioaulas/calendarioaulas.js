@@ -32,49 +32,30 @@ window.addEventListener('resize', function(event) {
 document.addEventListener("DOMContentLoaded", function() {
     const btnPrev = document.getElementById("btn_prev");
     const btnNext = document.getElementById("btn_next");
+    const mesDisplay = document.getElementById("mes");
+    const anoDisplay = document.getElementById("ano");
+    const diasContainer = document.querySelector(".dias");
 
-    let currentDate = new Date(); // Obtém a data atual
-    let monthIndex = currentDate.getMonth(); // Obtém o índice do mês atual (0-11)
+    let monthIndex = new Date().getMonth();
+    let year = new Date().getFullYear();
     const months = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
-    const year = currentDate.getFullYear(); // Obtém o ano atual
-    const dias = document.getElementById("dias");
 
     function updateCalendar() {
-        const totalDays = new Date(year, monthIndex + 1, 0).getDate(); // Total de dias no mês
-        const firstDayIndex = new Date(year, monthIndex, 1).getDay(); // Índice do primeiro dia da semana no mês
+        mesDisplay.textContent = months[monthIndex];
+        anoDisplay.textContent = year;
 
-        dias.innerHTML = ""; // Limpa o conteúdo da tabela
+        diasContainer.innerHTML = "";
 
-        let day = 1;
+        const lastDayOfMonth = new Date(year, monthIndex + 1, 0).getDate();
 
-        // Loop para criar as linhas do calendário
-        for (let i = 0; i < 6; i++) {
-            const row = document.createElement("tr");
-
-            // Loop para criar as células de cada linha
-            for (let j = 0; j < 7; j++) {
-                const cell = document.createElement("td");
-                if (i === 0 && j < firstDayIndex) {
-                    // Células vazias antes do primeiro dia do mês
-                    row.appendChild(cell);
-                } else if (day > totalDays) {
-                    // Células vazias após o último dia do mês
-                    row.appendChild(cell);
-                } else {
-                    cell.textContent = day;
-                    row.appendChild(cell);
-                    day++;
-                }
-            }
-            dias.appendChild(row);
+        for (let i = 1; i <= lastDayOfMonth; i++) {
+            const dia = document.createElement("div");
+            dia.classList.add("background-dia");
+            dia.innerHTML = `<p class="dia">${i}</p>`;
+            diasContainer.appendChild(dia);
         }
-
-        // Atualiza o mês e ano exibidos
-        document.getElementById("mes").textContent = months[monthIndex];
-        document.getElementById("ano").textContent = year;
     }
 
-    // Função para avançar o mês
     btnNext.addEventListener("click", function() {
         monthIndex++;
         if (monthIndex > 11) {
@@ -84,7 +65,6 @@ document.addEventListener("DOMContentLoaded", function() {
         updateCalendar();
     });
 
-    // Função para retroceder o mês
     btnPrev.addEventListener("click", function() {
         monthIndex--;
         if (monthIndex < 0) {
@@ -94,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function() {
         updateCalendar();
     });
 
-    // Inicializa o calendário
     updateCalendar();
 });
+
 
