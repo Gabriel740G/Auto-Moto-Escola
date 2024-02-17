@@ -176,22 +176,44 @@
 
 .info-aluno {
     display: flex;
-    flex-direction: column;
-    gap: 4px;
+    justify-content: space-between;
     border: 1px solid var(--white);
     padding: 10px;
     margin: 10px 25px;
 }
 
-.info-aluno p {
+.dados {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.info-aluno > .dados p {
     color: var(--white);
     font-weight: 600;
 }
 
-.info-aluno span {
+.info-aluno > .dados span {
     font-weight: normal;
 }
 
 .nome-aluno {
     text-transform: uppercase;
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.excluir, .editar {
+    background-color: transparent;
+    color: var(--orange);
+    border: none;
+    cursor: pointer;
+}
+
+.excluir:hover, .editar:hover {
+    color: var(--white);
 }

@@ -175,24 +175,46 @@
 
 .info-carro {
     display: flex;
-    flex-direction: column;
-    gap: 5px;
+    justify-content: space-between;
     border: 1px solid var(--white);
     padding: 10px;
     margin: 10px 25px;
 }
 
-.info-carro p {
+.dados {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.info-carro > .dados p {
     color: var(--white);
     font-weight: 600;
 }
 
-.info-carro span {
+.info-carro > .dados span {
     font-weight: normal;
 }
 
 .modelo-carro span {
     font-weight: normal;
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.excluir, .editar {
+    background-color: transparent;
+    color: var(--orange);
+    border: none;
+    cursor: pointer;
+}
+
+.excluir:hover, .editar:hover {
+    color: var(--white);
 }
 
 

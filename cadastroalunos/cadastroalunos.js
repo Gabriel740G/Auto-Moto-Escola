@@ -27,3 +27,31 @@ window.addEventListener('resize', function(event) {
     }
 })
 
+function formatarCPF(cpf) {
+    // Remove qualquer caractere que não seja número
+    cpf = cpf.replace(/\D/g, '');
+    
+    // Adiciona a formatação
+    cpf = cpf.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, '$1.$2.$3-$4');
+    
+    return cpf;
+}
+
+function formatarRG(rg) {
+
+    rg = rg.replace(/\D/g, '');
+
+    rg = rg.replace(/(\d{2})(\d{3})(\d{3})(\d{2})/, '$1.$2.$3-$4');
+
+    return rg;
+}
+
+function formatarData(data) {
+    
+    data = data.replace(/\D/g, '');
+
+    data = data.replace(/(\d{2})(\d{2})(\d{4})/, '$1/$2/$3');
+
+    return data;
+}
+
