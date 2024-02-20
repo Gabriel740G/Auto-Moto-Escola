@@ -114,12 +114,6 @@
     transform: translateY(5%);
 }
 
-#form-agendamento form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 #info-aluno, #info-aula {
     display: flex;
     flex-direction: column;
@@ -131,13 +125,9 @@
     font-size: 16px;
 }
 
-#info-aula {
-    transform: translateX(-78px);
-}
-
 #campos {
     display: flex;
-    gap: 310px;
+    justify-content: space-around;
 }
 
 #campos label {
@@ -150,14 +140,16 @@
 }
 
 #btn-submit {
+    display: block;
+    margin: 0 auto;
+    background-color: var(--orange);
+    color: var(--white);
     border: none;
     border-radius: 30px;
     padding: 15px;
-    cursor: pointer;
-    background-color: var(--orange);
-    color: var(--white);
     font-weight: bold;
     font-size: 16px;
+    cursor: pointer;
 }
 
 #btn-submit:hover {
