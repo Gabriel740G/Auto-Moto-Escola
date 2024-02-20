@@ -104,16 +104,15 @@
 /* Configurações do formulário de cadastro */
 
 #form-aluno {
+    display: block;
+    margin: 0 auto;
+    padding: 3px;
     background-color: var(--darkblue);
     width: 71vw;
     height: 78vh;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.623);
     text-align: center;
-    margin-top: 1%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateY(5%);
 }
 
 #navigation-register {
@@ -121,7 +120,8 @@
     align-items: center;
     justify-content: center;
     gap: 80px;
-    margin: 2%;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 .btn-cadastro {
@@ -159,13 +159,9 @@
 
 #campos {
     display: flex;
-    justify-content: center;
-    gap: 240px;
+    justify-content: space-around;
+    margin: 20px;
     text-align: left;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 #dados-pessoais, #dados-login {
@@ -186,9 +182,9 @@
     font-weight: 600;
     border: none;
     padding: 12px;
+    margin: 12px;
     border-radius: 20px;
     cursor: pointer;
-    transform: translateY(55vh);
 }
 
 #btn-submit:hover {

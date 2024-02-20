@@ -1,16 +1,17 @@
 @media screen and (max-width: 768px) {
     #form-login {
-        height: 430px;
+        height: 68vh;
+        transform: translateY(50px);
     }
 
     #header-login {
-        margin: 20px;
+        justify-content: space-around;
         gap: 20px;
-        transform: translateX(-12px);
+        transform: translateX(-10px);
     }
 
     #img-carro {
-        width: 100px;
+        width: 120px;
     }
 
     #texto-login {
@@ -19,11 +20,12 @@
     }
 
     #form-campos {
-        height: 300px;
+        height: 51vh;
+        transform: translateY(10px);
     }
 
     form {
-        margin-top: 17%;
+        transform: translateY(40px);
     }
 
     .form-label {
@@ -37,7 +39,7 @@
 
     .btn-senha {
         position: absolute;
-        right: 35px;
+        right: 13%;
     }
 
     .btn-senha .fa {

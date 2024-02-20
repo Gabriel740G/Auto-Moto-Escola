@@ -115,25 +115,26 @@ body {
 /* Configurações do formulário de login */
 
 #form-login {
+    display: block;
+    margin: 0 auto;
     background-color: var(--white);
-    height: 80%;
-    width: 84%;
+    height: 80vh;
+    width: 84vw;
     text-align: center;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.664);
-    position: absolute;
-    top: 15%;
-    left: 8%;
+    transform: translateY(6%);
 }
 
 #header-login {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin: 0 auto;
     transform: translateX(-19%);
 }
 
 #img-carro {
-    width: 14%;
+    width: 160px;
 }
 
 #texto-login {
@@ -142,13 +143,11 @@ body {
 }
 
 #form-campos {
+    display: block;
+    margin: 0 auto;
     background-color: var(--gray);
-    width: 82%;
-    height: 72%;
-    position: absolute;
-    top: 54%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 70vw;
+    height: 60vh;
 }
 
 form {
@@ -156,7 +155,7 @@ form {
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    margin-top: 7%;
+    transform: translateY(60px);
 }
 
 .form-label {
@@ -188,7 +187,7 @@ form {
     color: var(--darkblue);
     cursor: pointer;
     position: absolute;
-    right: 200px;
+    right: 21.2%;
 }
 
 .btn-senha:hover {
@@ -196,7 +195,7 @@ form {
 }
 
 .btn-senha .fa {
-    font-size: 18px;
+    font-size: 17px;
 }
 
 #btn-ocultar {

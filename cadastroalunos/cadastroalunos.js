@@ -46,12 +46,5 @@ function formatarRG(rg) {
     return rg;
 }
 
-function formatarData(data) {
-    
-    data = data.replace(/\D/g, '');
 
-    data = data.replace(/(\d{2})(\d{2})(\d{4})/, '$1/$2/$3');
-
-    return data;
-}
 
