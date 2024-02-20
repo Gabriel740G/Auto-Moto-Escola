@@ -147,7 +147,8 @@ body {
     margin: 0 auto;
     background-color: var(--gray);
     width: 70vw;
-    height: 60vh;
+    height: 58vh;
+    transform: translateY(10px);
 }
 
 form {
