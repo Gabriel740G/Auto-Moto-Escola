@@ -1,7 +1,7 @@
 @media screen and (max-width: 768px) {
     #form-login {
-        height: 68vh;
-        transform: translateY(50px);
+        height: 61vh;
+        transform: translateY(70px);
     }
 
     #header-login {
@@ -20,7 +20,7 @@
     }
 
     #form-campos {
-        height: 51vh;
+        height: 47vh;
         transform: translateY(10px);
     }
 

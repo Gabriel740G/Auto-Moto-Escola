@@ -156,7 +156,7 @@ form {
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    transform: translateY(60px);
+    padding-top: 7%;
 }
 
 .form-label {
